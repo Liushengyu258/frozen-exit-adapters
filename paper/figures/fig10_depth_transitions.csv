@@ -1,0 +1,13 @@
+family,from_depth,to_depth,domain,gained,lost
+best_s,60,61,math,47,2
+best_s,61,62,math,35,2
+best_s,62,63,math,0,3
+requested_s,60,61,math,45,6
+requested_s,61,62,math,37,2
+requested_s,62,63,math,1,2
+best_s,60,61,code,5,4
+best_s,61,62,code,9,4
+best_s,62,63,code,23,2
+requested_s,60,61,code,10,4
+requested_s,61,62,code,11,3
+requested_s,62,63,code,21,3

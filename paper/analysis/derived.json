@@ -1,0 +1,475 @@
+{
+  "scores": {
+    "best_s60": {
+      "math": {
+        "passed": 17,
+        "n": 100
+      },
+      "code": {
+        "passed": 37,
+        "n": 99
+      }
+    },
+    "best_s61": {
+      "math": {
+        "passed": 62,
+        "n": 100
+      },
+      "code": {
+        "passed": 38,
+        "n": 99
+      }
+    },
+    "best_s62": {
+      "math": {
+        "passed": 95,
+        "n": 100
+      },
+      "code": {
+        "passed": 43,
+        "n": 99
+      }
+    },
+    "best_s63": {
+      "math": {
+        "passed": 92,
+        "n": 100
+      },
+      "code": {
+        "passed": 64,
+        "n": 99
+      }
+    },
+    "requested_s60": {
+      "math": {
+        "passed": 18,
+        "n": 100
+      },
+      "code": {
+        "passed": 30,
+        "n": 99
+      }
+    },
+    "requested_s61": {
+      "math": {
+        "passed": 57,
+        "n": 100
+      },
+      "code": {
+        "passed": 36,
+        "n": 99
+      }
+    },
+    "requested_s62": {
+      "math": {
+        "passed": 92,
+        "n": 100
+      },
+      "code": {
+        "passed": 44,
+        "n": 99
+      }
+    },
+    "requested_s63": {
+      "math": {
+        "passed": 91,
+        "n": 100
+      },
+      "code": {
+        "passed": 62,
+        "n": 99
+      }
+    },
+    "teacher": {
+      "math": {
+        "passed": 94,
+        "n": 100
+      },
+      "code": {
+        "passed": 71,
+        "n": 99
+      }
+    },
+    "identity_60": {
+      "math": {
+        "passed": 3,
+        "n": 100
+      },
+      "code": {
+        "passed": 0,
+        "n": 99
+      }
+    },
+    "identity_61": {
+      "math": {
+        "passed": 2,
+        "n": 100
+      },
+      "code": {
+        "passed": 0,
+        "n": 99
+      }
+    },
+    "identity_62": {
+      "math": {
+        "passed": 20,
+        "n": 100
+      },
+      "code": {
+        "passed": 0,
+        "n": 99
+      }
+    },
+    "identity_63": {
+      "math": {
+        "passed": 75,
+        "n": 100
+      },
+      "code": {
+        "passed": 14,
+        "n": 99
+      }
+    }
+  },
+  "paired": [
+    {
+      "configuration": "best_s60",
+      "domain": "math",
+      "difference_pp": -77.0,
+      "ci_low": -85.0,
+      "ci_high": -68.97500000000218,
+      "lost": 77,
+      "gained": 0,
+      "n": 100
+    },
+    {
+      "configuration": "best_s61",
+      "domain": "math",
+      "difference_pp": -32.0,
+      "ci_low": -42.0,
+      "ci_high": -22.0,
+      "lost": 34,
+      "gained": 2,
+      "n": 100
+    },
+    {
+      "configuration": "best_s62",
+      "domain": "math",
+      "difference_pp": 1.0,
+      "ci_low": -2.0,
+      "ci_high": 5.0,
+      "lost": 1,
+      "gained": 2,
+      "n": 100
+    },
+    {
+      "configuration": "best_s63",
+      "domain": "math",
+      "difference_pp": -2.0,
+      "ci_low": -6.0,
+      "ci_high": 2.0,
+      "lost": 3,
+      "gained": 1,
+      "n": 100
+    },
+    {
+      "configuration": "requested_s60",
+      "domain": "math",
+      "difference_pp": -76.0,
+      "ci_low": -84.0,
+      "ci_high": -67.0,
+      "lost": 76,
+      "gained": 0,
+      "n": 100
+    },
+    {
+      "configuration": "requested_s61",
+      "domain": "math",
+      "difference_pp": -37.0,
+      "ci_low": -47.0,
+      "ci_high": -27.0,
+      "lost": 38,
+      "gained": 1,
+      "n": 100
+    },
+    {
+      "configuration": "requested_s62",
+      "domain": "math",
+      "difference_pp": -2.0,
+      "ci_low": -6.0,
+      "ci_high": 2.0,
+      "lost": 3,
+      "gained": 1,
+      "n": 100
+    },
+    {
+      "configuration": "requested_s63",
+      "domain": "math",
+      "difference_pp": -3.0,
+      "ci_low": -8.0,
+      "ci_high": 1.0,
+      "lost": 4,
+      "gained": 1,
+      "n": 100
+    },
+    {
+      "configuration": "best_s60",
+      "domain": "code",
+      "difference_pp": -34.34343434343434,
+      "ci_low": -44.44444444444444,
+      "ci_high": -24.242424242424242,
+      "lost": 35,
+      "gained": 1,
+      "n": 99
+    },
+    {
+      "configuration": "best_s61",
+      "domain": "code",
+      "difference_pp": -33.33333333333333,
+      "ci_low": -43.43434343434344,
+      "ci_high": -24.242424242424242,
+      "lost": 34,
+      "gained": 1,
+      "n": 99
+    },
+    {
+      "configuration": "best_s62",
+      "domain": "code",
+      "difference_pp": -28.28282828282828,
+      "ci_low": -38.38383838383838,
+      "ci_high": -18.181818181818183,
+      "lost": 31,
+      "gained": 3,
+      "n": 99
+    },
+    {
+      "configuration": "best_s63",
+      "domain": "code",
+      "difference_pp": -7.07070707070707,
+      "ci_low": -15.151515151515152,
+      "ci_high": 0.0,
+      "lost": 11,
+      "gained": 4,
+      "n": 99
+    },
+    {
+      "configuration": "requested_s60",
+      "domain": "code",
+      "difference_pp": -41.41414141414141,
+      "ci_low": -51.515151515151516,
+      "ci_high": -31.313131313131315,
+      "lost": 43,
+      "gained": 2,
+      "n": 99
+    },
+    {
+      "configuration": "requested_s61",
+      "domain": "code",
+      "difference_pp": -35.35353535353536,
+      "ci_low": -45.45454545454545,
+      "ci_high": -25.227272727274933,
+      "lost": 38,
+      "gained": 3,
+      "n": 99
+    },
+    {
+      "configuration": "requested_s62",
+      "domain": "code",
+      "difference_pp": -27.27272727272727,
+      "ci_low": -38.38383838383838,
+      "ci_high": -16.161616161616163,
+      "lost": 32,
+      "gained": 5,
+      "n": 99
+    },
+    {
+      "configuration": "requested_s63",
+      "domain": "code",
+      "difference_pp": -9.090909090909092,
+      "ci_low": -17.17171717171717,
+      "ci_high": -1.0101010101010102,
+      "lost": 13,
+      "gained": 4,
+      "n": 99
+    }
+  ],
+  "diagnostics": [
+    {
+      "configuration": "best_s60",
+      "token_limit": 68,
+      "repetition": 7,
+      "encoding_flags": 0,
+      "n": 199
+    },
+    {
+      "configuration": "best_s61",
+      "token_limit": 28,
+      "repetition": 4,
+      "encoding_flags": 0,
+      "n": 199
+    },
+    {
+      "configuration": "best_s62",
+      "token_limit": 22,
+      "repetition": 1,
+      "encoding_flags": 0,
+      "n": 199
+    },
+    {
+      "configuration": "best_s63",
+      "token_limit": 15,
+      "repetition": 0,
+      "encoding_flags": 0,
+      "n": 199
+    },
+    {
+      "configuration": "requested_s60",
+      "token_limit": 61,
+      "repetition": 6,
+      "encoding_flags": 0,
+      "n": 199
+    },
+    {
+      "configuration": "requested_s61",
+      "token_limit": 30,
+      "repetition": 5,
+      "encoding_flags": 0,
+      "n": 199
+    },
+    {
+      "configuration": "requested_s62",
+      "token_limit": 20,
+      "repetition": 0,
+      "encoding_flags": 0,
+      "n": 199
+    },
+    {
+      "configuration": "requested_s63",
+      "token_limit": 14,
+      "repetition": 0,
+      "encoding_flags": 0,
+      "n": 199
+    }
+  ],
+  "transitions": [
+    {
+      "family": "best_s",
+      "from_depth": 60,
+      "to_depth": 61,
+      "domain": "math",
+      "gained": 47,
+      "lost": 2
+    },
+    {
+      "family": "best_s",
+      "from_depth": 61,
+      "to_depth": 62,
+      "domain": "math",
+      "gained": 35,
+      "lost": 2
+    },
+    {
+      "family": "best_s",
+      "from_depth": 62,
+      "to_depth": 63,
+      "domain": "math",
+      "gained": 0,
+      "lost": 3
+    },
+    {
+      "family": "requested_s",
+      "from_depth": 60,
+      "to_depth": 61,
+      "domain": "math",
+      "gained": 45,
+      "lost": 6
+    },
+    {
+      "family": "requested_s",
+      "from_depth": 61,
+      "to_depth": 62,
+      "domain": "math",
+      "gained": 37,
+      "lost": 2
+    },
+    {
+      "family": "requested_s",
+      "from_depth": 62,
+      "to_depth": 63,
+      "domain": "math",
+      "gained": 1,
+      "lost": 2
+    },
+    {
+      "family": "best_s",
+      "from_depth": 60,
+      "to_depth": 61,
+      "domain": "code",
+      "gained": 5,
+      "lost": 4
+    },
+    {
+      "family": "best_s",
+      "from_depth": 61,
+      "to_depth": 62,
+      "domain": "code",
+      "gained": 9,
+      "lost": 4
+    },
+    {
+      "family": "best_s",
+      "from_depth": 62,
+      "to_depth": 63,
+      "domain": "code",
+      "gained": 23,
+      "lost": 2
+    },
+    {
+      "family": "requested_s",
+      "from_depth": 60,
+      "to_depth": 61,
+      "domain": "code",
+      "gained": 10,
+      "lost": 4
+    },
+    {
+      "family": "requested_s",
+      "from_depth": 61,
+      "to_depth": 62,
+      "domain": "code",
+      "gained": 11,
+      "lost": 3
+    },
+    {
+      "family": "requested_s",
+      "from_depth": 62,
+      "to_depth": 63,
+      "domain": "code",
+      "gained": 21,
+      "lost": 3
+    }
+  ],
+  "vector_mse": {
+    "best_s60": 0.24001731970906257,
+    "requested_s60": 0.2721832050383091,
+    "best_s61": 0.19185180523246526,
+    "requested_s61": 0.2153879754692316,
+    "best_s62": 0.14079285372421146,
+    "requested_s62": 0.15655271849781274,
+    "best_s63": 0.06324402297474443,
+    "requested_s63": 0.07304249323904514
+  },
+  "source_sha256": {
+    "main/wide/results/probe_results.jsonl": "83adf3888e04ebb89c67adc0eae41881ca88d77f4c67c7d0896178d071420dd0",
+    "main/wide/results/generation_results.jsonl": "6c5c1960451d9c1019f2bee650fc345684efe9e908a0c4273301483f5f1cbe97",
+    "main/wide/results/vector_test.json": "bc4ff912af5e165127f5865bb58443ca279ddb24fe5588fdecfa5a3784dfb57e",
+    "main/results/generation_results.jsonl": "f8ace6b7c6d68cad6b308b5c3facdff9d26d906f3035bd6449eb3c19224993f5",
+    "main/data_manifest.json": "6dbf1dc5ca21562802f4f0003bdb022c3afc455ca2d6c4e001a8a6d93087058d"
+  },
+  "bootstrap": {
+    "unit": "paired question",
+    "resamples": 20000,
+    "seed": 20261007,
+    "interval": "percentile 95%, exploratory, unadjusted, excludes training-seed variation"
+  }
+}

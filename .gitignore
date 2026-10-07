@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+models/
+main/activations/
+main/data/
+main/run/
+main/wide/run/
+main/prompts.jsonl
+main/evaluation.jsonl
+*.pt
+*.safetensors
+*.bf16
+*.log
+.DS_Store

@@ -1,0 +1,9 @@
+configuration,token_limit,repetition,encoding_flags,n
+best_s60,68,7,0,199
+best_s61,28,4,0,199
+best_s62,22,1,0,199
+best_s63,15,0,0,199
+requested_s60,61,6,0,199
+requested_s61,30,5,0,199
+requested_s62,20,0,0,199
+requested_s63,14,0,0,199

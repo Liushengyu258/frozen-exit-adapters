@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "screen_completed": 64,
+  "screen_planned": 64,
+  "refine_completed": 8,
+  "refine_planned": 8,
+  "vector_tests": 8,
+  "best_at_last": 3
+}

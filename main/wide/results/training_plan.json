@@ -1,0 +1,125 @@
+{
+  "configs": [
+    {
+      "id": "silu_w6144",
+      "kind": "silu",
+      "hidden": 6144,
+      "hidden_layers": 1
+    },
+    {
+      "id": "gelu_w6144",
+      "kind": "gelu",
+      "hidden": 6144,
+      "hidden_layers": 1
+    },
+    {
+      "id": "silu2_w6144",
+      "kind": "silu2",
+      "hidden": 6144,
+      "hidden_layers": 2
+    },
+    {
+      "id": "swiglu_w6144",
+      "kind": "swiglu",
+      "hidden": 6144,
+      "hidden_layers": 1
+    },
+    {
+      "id": "silu_w8192",
+      "kind": "silu",
+      "hidden": 8192,
+      "hidden_layers": 1
+    },
+    {
+      "id": "gelu_w8192",
+      "kind": "gelu",
+      "hidden": 8192,
+      "hidden_layers": 1
+    },
+    {
+      "id": "silu2_w8192",
+      "kind": "silu2",
+      "hidden": 8192,
+      "hidden_layers": 2
+    },
+    {
+      "id": "swiglu_w8192",
+      "kind": "swiglu",
+      "hidden": 8192,
+      "hidden_layers": 1
+    },
+    {
+      "id": "silu_w10240",
+      "kind": "silu",
+      "hidden": 10240,
+      "hidden_layers": 1
+    },
+    {
+      "id": "gelu_w10240",
+      "kind": "gelu",
+      "hidden": 10240,
+      "hidden_layers": 1
+    },
+    {
+      "id": "silu2_w10240",
+      "kind": "silu2",
+      "hidden": 10240,
+      "hidden_layers": 2
+    },
+    {
+      "id": "swiglu_w10240",
+      "kind": "swiglu",
+      "hidden": 10240,
+      "hidden_layers": 1
+    },
+    {
+      "id": "silu_w12288",
+      "kind": "silu",
+      "hidden": 12288,
+      "hidden_layers": 1
+    },
+    {
+      "id": "gelu_w12288",
+      "kind": "gelu",
+      "hidden": 12288,
+      "hidden_layers": 1
+    },
+    {
+      "id": "silu2_w12288",
+      "kind": "silu2",
+      "hidden": 12288,
+      "hidden_layers": 2
+    },
+    {
+      "id": "swiglu_w12288",
+      "kind": "swiglu",
+      "hidden": 12288,
+      "hidden_layers": 1
+    }
+  ],
+  "sources": [
+    60,
+    61,
+    62,
+    63
+  ],
+  "split_hashes": {
+    "train": "02c2ec8902d2abbc067e28955de955eb6f301ec86f8b6801861183c632fa4880",
+    "validation": "261ce5562dfceba01b89c78f882d4dd218120284f4cf111b269825bd20e640e6",
+    "test": "1244fd46d5ab6275b70332a4699f7420c9b0a53a18c7505db3cd255c231ffd08"
+  },
+  "screen_seconds_per_job": 133.63898238515853,
+  "refine_seconds_per_job": 458.190796749115,
+  "batch_size": 512,
+  "eval_every_steps": 1000,
+  "eval_every_seconds": 45,
+  "lr": 0.0003,
+  "refine_lr": 8e-05,
+  "weight_decay": 0,
+  "loss": "MSE after frozen final RMSNorm",
+  "early_stopping": false,
+  "schedule": "100-step warmup, cosine decay by active training time to 1% peak",
+  "selection": "top two architectures per layer by vector validation MSE; no generation or test selection",
+  "checkpoint_storage": "best float32 for four depth winners and requested SiLU10240; others BF16; rounding affects refinement initialization",
+  "no_convergence_claim": "training bounded by user 8-hour budget; curves and terminal trend reported"
+}
