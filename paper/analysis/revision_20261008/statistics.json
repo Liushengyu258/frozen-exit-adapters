@@ -1,0 +1,254 @@
+{
+  "training": 24,
+  "generation": 8557,
+  "configurations": 43,
+  "trajectory_pairs": 80,
+  "all16_spearman": {
+    "math": -0.332839038306091,
+    "code": -0.6696903142037681
+  },
+  "trajectory_summary": [
+    {
+      "configuration": "fixed_s62_silu2_w12288_seed20261008",
+      "questions": 20,
+      "sequence_exact": 3,
+      "divergence_median": 6.0,
+      "teacher_prefix_mse": 0.17327169407817272,
+      "adapter_prefix_mse": 0.17074359886728682,
+      "teacher_prefix_agreement": 0.9629441608903541,
+      "adapter_prefix_agreement": 0.9607437821834717,
+      "paired_post_questions": 17,
+      "paired_post_delta_mean": -0.009313107951310809,
+      "paired_post_increase_questions": 7,
+      "max_common_prefix_difference": 0.032369136810302734
+    },
+    {
+      "configuration": "fixed_s62_silu_w10240_seed20261008",
+      "questions": 20,
+      "sequence_exact": 2,
+      "divergence_median": 5.5,
+      "teacher_prefix_mse": 0.18530725942932194,
+      "adapter_prefix_mse": 0.18222697472303923,
+      "teacher_prefix_agreement": 0.9578824338056341,
+      "adapter_prefix_agreement": 0.9507525618961002,
+      "paired_post_questions": 18,
+      "paired_post_delta_mean": -0.009537159683358446,
+      "paired_post_increase_questions": 8,
+      "max_common_prefix_difference": 0.05032825469970703
+    },
+    {
+      "configuration": "fixed_s63_silu2_w12288_seed20261008",
+      "questions": 20,
+      "sequence_exact": 4,
+      "divergence_median": 9.5,
+      "teacher_prefix_mse": 0.08081535401129576,
+      "adapter_prefix_mse": 0.08221658543301205,
+      "teacher_prefix_agreement": 0.9732296644806112,
+      "adapter_prefix_agreement": 0.9779283096120548,
+      "paired_post_questions": 16,
+      "paired_post_delta_mean": 0.010563220014435196,
+      "paired_post_increase_questions": 10,
+      "max_common_prefix_difference": 0.06857984513044357
+    },
+    {
+      "configuration": "fixed_s63_silu_w10240_seed20261008",
+      "questions": 20,
+      "sequence_exact": 5,
+      "divergence_median": 6.0,
+      "teacher_prefix_mse": 0.08591589696340093,
+      "adapter_prefix_mse": 0.08558185611535403,
+      "teacher_prefix_agreement": 0.9706789106480009,
+      "adapter_prefix_agreement": 0.978509427751711,
+      "paired_post_questions": 15,
+      "paired_post_delta_mean": 0.0055084772181666925,
+      "paired_post_increase_questions": 8,
+      "max_common_prefix_difference": 0.03288924694061279
+    }
+  ],
+  "means": [
+    {
+      "depth": 62,
+      "kind": "affine",
+      "domain": "math",
+      "seeds": 3,
+      "mean_correct": 88.66666666666667,
+      "sd_correct": 0.5773502691896257,
+      "minimum": 88,
+      "maximum": 89,
+      "mean_percent": 88.66666666666667
+    },
+    {
+      "depth": 62,
+      "kind": "affine",
+      "domain": "code",
+      "seeds": 3,
+      "mean_correct": 31.666666666666668,
+      "sd_correct": 0.5773502691896258,
+      "minimum": 31,
+      "maximum": 32,
+      "mean_percent": 31.986531986531986
+    },
+    {
+      "depth": 62,
+      "kind": "silu",
+      "domain": "math",
+      "seeds": 3,
+      "mean_correct": 93.33333333333333,
+      "sd_correct": 0.5773502691896257,
+      "minimum": 93,
+      "maximum": 94,
+      "mean_percent": 93.33333333333333
+    },
+    {
+      "depth": 62,
+      "kind": "silu",
+      "domain": "code",
+      "seeds": 3,
+      "mean_correct": 43.0,
+      "sd_correct": 0.0,
+      "minimum": 43,
+      "maximum": 43,
+      "mean_percent": 43.43434343434344
+    },
+    {
+      "depth": 62,
+      "kind": "silu2",
+      "domain": "math",
+      "seeds": 3,
+      "mean_correct": 92.0,
+      "sd_correct": 1.0,
+      "minimum": 91,
+      "maximum": 93,
+      "mean_percent": 92.0
+    },
+    {
+      "depth": 62,
+      "kind": "silu2",
+      "domain": "code",
+      "seeds": 3,
+      "mean_correct": 40.333333333333336,
+      "sd_correct": 0.5773502691896258,
+      "minimum": 40,
+      "maximum": 41,
+      "mean_percent": 40.74074074074074
+    },
+    {
+      "depth": 63,
+      "kind": "affine",
+      "domain": "math",
+      "seeds": 3,
+      "mean_correct": 92.0,
+      "sd_correct": 0.0,
+      "minimum": 92,
+      "maximum": 92,
+      "mean_percent": 92.0
+    },
+    {
+      "depth": 63,
+      "kind": "affine",
+      "domain": "code",
+      "seeds": 3,
+      "mean_correct": 46.666666666666664,
+      "sd_correct": 0.5773502691896258,
+      "minimum": 46,
+      "maximum": 47,
+      "mean_percent": 47.138047138047135
+    },
+    {
+      "depth": 63,
+      "kind": "silu",
+      "domain": "math",
+      "seeds": 3,
+      "mean_correct": 92.0,
+      "sd_correct": 1.0,
+      "minimum": 91,
+      "maximum": 93,
+      "mean_percent": 92.0
+    },
+    {
+      "depth": 63,
+      "kind": "silu",
+      "domain": "code",
+      "seeds": 3,
+      "mean_correct": 63.0,
+      "sd_correct": 1.0,
+      "minimum": 62,
+      "maximum": 64,
+      "mean_percent": 63.63636363636363
+    },
+    {
+      "depth": 63,
+      "kind": "silu2",
+      "domain": "math",
+      "seeds": 3,
+      "mean_correct": 93.33333333333333,
+      "sd_correct": 0.5773502691896257,
+      "minimum": 93,
+      "maximum": 94,
+      "mean_percent": 93.33333333333333
+    },
+    {
+      "depth": 63,
+      "kind": "silu2",
+      "domain": "code",
+      "seeds": 3,
+      "mean_correct": 63.0,
+      "sd_correct": 1.7320508075688772,
+      "minimum": 62,
+      "maximum": 65,
+      "mean_percent": 63.63636363636363
+    },
+    {
+      "depth": 63,
+      "kind": "linear1",
+      "domain": "math",
+      "seeds": 3,
+      "mean_correct": 92.0,
+      "sd_correct": 1.7320508075688772,
+      "minimum": 90,
+      "maximum": 93,
+      "mean_percent": 92.0
+    },
+    {
+      "depth": 63,
+      "kind": "linear1",
+      "domain": "code",
+      "seeds": 3,
+      "mean_correct": 47.333333333333336,
+      "sd_correct": 0.5773502691896258,
+      "minimum": 47,
+      "maximum": 48,
+      "mean_percent": 47.811447811447806
+    },
+    {
+      "depth": 63,
+      "kind": "linear2",
+      "domain": "math",
+      "seeds": 3,
+      "mean_correct": 92.0,
+      "sd_correct": 0.0,
+      "minimum": 92,
+      "maximum": 92,
+      "mean_percent": 92.0
+    },
+    {
+      "depth": 63,
+      "kind": "linear2",
+      "domain": "code",
+      "seeds": 3,
+      "mean_correct": 47.0,
+      "sd_correct": 0.0,
+      "minimum": 47,
+      "maximum": 47,
+      "mean_percent": 47.47474747474748
+    }
+  ],
+  "input_hashes": {
+    "probe_results.jsonl": "b03d0433becf4673acf564ef42be3bce712669c4ebe6cedbe995ff7cc1f2a112",
+    "generation_results.jsonl": "4aedbea0feea6416a0958da71f7d8960debbfa8bba753336f87468deac3fd8c3",
+    "trajectory_results.jsonl": "9c74f008f0b27165aa229f4214e2a26f0895e2d9bae212071e4135248114a35a"
+  },
+  "figures_are_descriptive": true,
+  "fresh_independent_test": false,
+  "trajectory_all_questions_included": true
+}

@@ -2,7 +2,7 @@
 No statistical estimates or observations are added by this script.
 """
 from pathlib import Path
-import csv, string
+import argparse, csv, string
 import numpy as np
 import matplotlib as mpl
 mpl.use('Agg')
@@ -10,6 +10,9 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch, Rectangle
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'figures'
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--overview-only',action='store_true',help='Render only retained manuscript figures 1 and 2')
+args=parser.parse_args()
 # Same publication baseline as make_figures.py, with larger readable type.
 mpl.rcParams.update({'font.family':'sans-serif','font.sans-serif':['Arial','Helvetica','DejaVu Sans'],
  'font.size':9,'axes.titlesize':10,'axes.labelsize':9,'xtick.labelsize':8,'ytick.labelsize':8,
@@ -33,12 +36,13 @@ def panel(ax,i,title):
  ax.text(-.12,1.08,string.ascii_lowercase[i],transform=ax.transAxes,fontweight='bold',fontsize=12,va='bottom')
 def save(fig,n):
  fig.savefig(OUT/(n+'.pdf'),bbox_inches='tight',pad_inches=.12)
+ fig.savefig(OUT/(n+'.svg'),bbox_inches='tight',pad_inches=.12)
  fig.savefig(OUT/(n+'.png'),bbox_inches='tight',pad_inches=.12,dpi=300)
  plt.close(fig)
 def family_legend(fig,extra=()):
- hh=[Line2D([],[],color=BLUE,marker='o',lw=1.4,label='Validation-selected'),Line2D([],[],color=ORANGE,marker='s',lw=1.4,label='SiLU-1 / 10240')]+list(extra)
+ hh=[Line2D([],[],color=BLUE,marker='o',lw=1.4,label='ValMSE-selected'),Line2D([],[],color=ORANGE,marker='s',lw=1.4,label='SiLU-1 / 10240')]+list(extra)
  fig.legend(handles=hh,loc='outside lower center',ncol=len(hh),fontsize=8)
-def name(c): return c.replace('best_s','Best · ').replace('requested_s','S1 · ')
+def name(c): return c.replace('best_s','ValMSE · ').replace('requested_s','S1 · ')
 # 1. Dense 64-run comparison: four aligned matrices with exact values.
 n='fig01_capacity';rr=read(n);fig,axs=canvas(2,2,135)
 for i,(ax,d) in enumerate(zip(axs.flat,DEPTH)):
@@ -65,6 +69,7 @@ for i,(ax,dom) in enumerate(zip(axs.flat,['math','code'])):
  ax.text(60.03,t-7,f'Teacher {t:.1f}%',fontsize=8,color=BLACK)
  ax.set(xticks=DEPTH,xlabel='Retained depth',ylabel='Success rate (%)',ylim=(-3,108),yticks=[0,25,50,75,100],xlim=(59.8,63.3));panel(ax,i,f'{dom.title()} · n={100 if dom=="math" else 99}')
 family_legend(fig,[Line2D([],[],color=GREY,marker='^',label='Direct exit')]);save(fig,n)
+if args.overview_only:raise SystemExit(0)
 # 3. Config-level association; no regression.
 n='fig03_fit_behavior';ss=read(n);fig,axs=canvas(1,2,103)
 for i,(ax,dom) in enumerate(zip(axs.flat,['math','code'])):

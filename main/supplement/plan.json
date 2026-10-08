@@ -1,0 +1,288 @@
+{
+  "jobs": [
+    {
+      "name": "fixed_s62_affine_seed20261008",
+      "source": 62,
+      "config": {
+        "id": "affine",
+        "kind": "affine",
+        "hidden": 5120,
+        "hidden_layers": 0
+      },
+      "seed": 20261008
+    },
+    {
+      "name": "fixed_s62_silu_w10240_seed20261008",
+      "source": 62,
+      "config": {
+        "id": "silu_w10240",
+        "kind": "silu",
+        "hidden": 10240,
+        "hidden_layers": 1
+      },
+      "seed": 20261008
+    },
+    {
+      "name": "fixed_s62_silu2_w12288_seed20261008",
+      "source": 62,
+      "config": {
+        "id": "silu2_w12288",
+        "kind": "silu2",
+        "hidden": 12288,
+        "hidden_layers": 2
+      },
+      "seed": 20261008
+    },
+    {
+      "name": "fixed_s63_affine_seed20261008",
+      "source": 63,
+      "config": {
+        "id": "affine",
+        "kind": "affine",
+        "hidden": 5120,
+        "hidden_layers": 0
+      },
+      "seed": 20261008
+    },
+    {
+      "name": "fixed_s63_silu_w10240_seed20261008",
+      "source": 63,
+      "config": {
+        "id": "silu_w10240",
+        "kind": "silu",
+        "hidden": 10240,
+        "hidden_layers": 1
+      },
+      "seed": 20261008
+    },
+    {
+      "name": "fixed_s63_silu2_w12288_seed20261008",
+      "source": 63,
+      "config": {
+        "id": "silu2_w12288",
+        "kind": "silu2",
+        "hidden": 12288,
+        "hidden_layers": 2
+      },
+      "seed": 20261008
+    },
+    {
+      "name": "fixed_s62_affine_seed20261009",
+      "source": 62,
+      "config": {
+        "id": "affine",
+        "kind": "affine",
+        "hidden": 5120,
+        "hidden_layers": 0
+      },
+      "seed": 20261009
+    },
+    {
+      "name": "fixed_s62_silu_w10240_seed20261009",
+      "source": 62,
+      "config": {
+        "id": "silu_w10240",
+        "kind": "silu",
+        "hidden": 10240,
+        "hidden_layers": 1
+      },
+      "seed": 20261009
+    },
+    {
+      "name": "fixed_s62_silu2_w12288_seed20261009",
+      "source": 62,
+      "config": {
+        "id": "silu2_w12288",
+        "kind": "silu2",
+        "hidden": 12288,
+        "hidden_layers": 2
+      },
+      "seed": 20261009
+    },
+    {
+      "name": "fixed_s63_affine_seed20261009",
+      "source": 63,
+      "config": {
+        "id": "affine",
+        "kind": "affine",
+        "hidden": 5120,
+        "hidden_layers": 0
+      },
+      "seed": 20261009
+    },
+    {
+      "name": "fixed_s63_silu_w10240_seed20261009",
+      "source": 63,
+      "config": {
+        "id": "silu_w10240",
+        "kind": "silu",
+        "hidden": 10240,
+        "hidden_layers": 1
+      },
+      "seed": 20261009
+    },
+    {
+      "name": "fixed_s63_silu2_w12288_seed20261009",
+      "source": 63,
+      "config": {
+        "id": "silu2_w12288",
+        "kind": "silu2",
+        "hidden": 12288,
+        "hidden_layers": 2
+      },
+      "seed": 20261009
+    },
+    {
+      "name": "fixed_s62_affine_seed20261010",
+      "source": 62,
+      "config": {
+        "id": "affine",
+        "kind": "affine",
+        "hidden": 5120,
+        "hidden_layers": 0
+      },
+      "seed": 20261010
+    },
+    {
+      "name": "fixed_s62_silu_w10240_seed20261010",
+      "source": 62,
+      "config": {
+        "id": "silu_w10240",
+        "kind": "silu",
+        "hidden": 10240,
+        "hidden_layers": 1
+      },
+      "seed": 20261010
+    },
+    {
+      "name": "fixed_s62_silu2_w12288_seed20261010",
+      "source": 62,
+      "config": {
+        "id": "silu2_w12288",
+        "kind": "silu2",
+        "hidden": 12288,
+        "hidden_layers": 2
+      },
+      "seed": 20261010
+    },
+    {
+      "name": "fixed_s63_affine_seed20261010",
+      "source": 63,
+      "config": {
+        "id": "affine",
+        "kind": "affine",
+        "hidden": 5120,
+        "hidden_layers": 0
+      },
+      "seed": 20261010
+    },
+    {
+      "name": "fixed_s63_silu_w10240_seed20261010",
+      "source": 63,
+      "config": {
+        "id": "silu_w10240",
+        "kind": "silu",
+        "hidden": 10240,
+        "hidden_layers": 1
+      },
+      "seed": 20261010
+    },
+    {
+      "name": "fixed_s63_silu2_w12288_seed20261010",
+      "source": 63,
+      "config": {
+        "id": "silu2_w12288",
+        "kind": "silu2",
+        "hidden": 12288,
+        "hidden_layers": 2
+      },
+      "seed": 20261010
+    },
+    {
+      "name": "fixed_s63_linear1_w10240_seed20261008",
+      "source": 63,
+      "config": {
+        "id": "linear1_w10240",
+        "kind": "linear1",
+        "hidden": 10240,
+        "hidden_layers": 1
+      },
+      "seed": 20261008
+    },
+    {
+      "name": "fixed_s63_linear2_w12288_seed20261008",
+      "source": 63,
+      "config": {
+        "id": "linear2_w12288",
+        "kind": "linear2",
+        "hidden": 12288,
+        "hidden_layers": 2
+      },
+      "seed": 20261008
+    },
+    {
+      "name": "fixed_s63_linear1_w10240_seed20261009",
+      "source": 63,
+      "config": {
+        "id": "linear1_w10240",
+        "kind": "linear1",
+        "hidden": 10240,
+        "hidden_layers": 1
+      },
+      "seed": 20261009
+    },
+    {
+      "name": "fixed_s63_linear2_w12288_seed20261009",
+      "source": 63,
+      "config": {
+        "id": "linear2_w12288",
+        "kind": "linear2",
+        "hidden": 12288,
+        "hidden_layers": 2
+      },
+      "seed": 20261009
+    },
+    {
+      "name": "fixed_s63_linear1_w10240_seed20261010",
+      "source": 63,
+      "config": {
+        "id": "linear1_w10240",
+        "kind": "linear1",
+        "hidden": 10240,
+        "hidden_layers": 1
+      },
+      "seed": 20261010
+    },
+    {
+      "name": "fixed_s63_linear2_w12288_seed20261010",
+      "source": 63,
+      "config": {
+        "id": "linear2_w12288",
+        "kind": "linear2",
+        "hidden": 12288,
+        "hidden_layers": 2
+      },
+      "seed": 20261010
+    }
+  ],
+  "steps": 12000,
+  "batch_size": 512,
+  "lr": 0.0003,
+  "weight_decay": 0,
+  "warmup_steps": 100,
+  "minimum_lr_fraction": 0.01,
+  "validation_every_steps": 1000,
+  "clip_grad_norm": 1.0,
+  "seeds": [
+    20261008,
+    20261009,
+    20261010
+  ],
+  "loss": "MSE after frozen final RMSNorm",
+  "sampling": "uniform prompt then uniform saved position; separate CUDA generator seeded identically across architectures and depths for each seed",
+  "early_stopping": false,
+  "selection": "lowest validation prompt-macro MSE, generation/test never used",
+  "precision": "FP32 parameters and saved checkpoints; BF16 autocast",
+  "test_previously_used": true,
+  "fresh_independent_test": "not included in this 8-hour protocol"
+}

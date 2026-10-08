@@ -1,0 +1,8 @@
+{
+  "completed": true,
+  "completed_pairs": 80,
+  "planned_pairs": 80,
+  "configurations": 4,
+  "questions_per_configuration": 20,
+  "both_prefix_types": true
+}

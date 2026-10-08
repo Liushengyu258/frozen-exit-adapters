@@ -16,7 +16,8 @@ for r in d['transitions']:
 for rel,h in d['source_sha256'].items():assert hashlib.sha256((ROOT.parent/rel).read_bytes()).hexdigest()==h
 for csvname,n in [('fig01_capacity',64),('fig02_generation',26),('fig03_fit_behavior',8),('fig05_paired',16),('fig06_code_failures',40),('fig07_domains',4000),('fig08_compute',64),('fig09_diagnostics',8),('fig10_depth_transitions',12)]:
  with (ROOT/'figures'/f'{csvname}.csv').open() as f:assert len(list(csv.DictReader(f)))==n,csvname
-assert len(list((ROOT/'figures').glob('fig*.pdf')))==10
-assert len(list((ROOT/'figures').glob('fig*.png')))==10
-report={'status':'numerical checks passed','scores_checked':13,'figures':10,'source_hashes_checked':len(d['source_sha256']),'limitations':'Checks do not establish scientific validity, independence or arXiv acceptance.'}
+original_figures=['fig01_capacity','fig02_generation','fig03_fit_behavior','fig04_refinement','fig05_paired','fig06_code_failures','fig07_domains','fig08_compute','fig09_diagnostics','fig10_depth_transitions']
+for stem in original_figures:
+ for ext in ['pdf','png']:assert (ROOT/'figures'/f'{stem}.{ext}').is_file(),(stem,ext)
+report={'status':'numerical checks passed','scores_checked':13,'original_stage_figures_checked':10,'source_hashes_checked':len(d['source_sha256']),'limitations':'Checks cover original-stage numerical claims, not supplementary analyses, scientific validity, independence or arXiv acceptance.'}
 (ROOT/'analysis/verification.json').write_text(json.dumps(report,indent=2));print(json.dumps(report))

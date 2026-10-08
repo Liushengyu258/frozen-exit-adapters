@@ -13,3 +13,6 @@ main/evaluation.jsonl
 *.bf16
 *.log
 .DS_Store
+
+main/supplement/run/
+paper/analysis/revision_20261008/contact_sheet.png

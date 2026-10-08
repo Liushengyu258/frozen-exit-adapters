@@ -1,7 +1,7 @@
 {
   "status": "numerical checks passed",
   "scores_checked": 13,
-  "figures": 10,
+  "original_stage_figures_checked": 10,
   "source_hashes_checked": 5,
-  "limitations": "Checks do not establish scientific validity, independence or arXiv acceptance."
+  "limitations": "Checks cover original-stage numerical claims, not supplementary analyses, scientific validity, independence or arXiv acceptance."
 }
