@@ -1,0 +1,16 @@
+{
+  "release_url": "https://github.com/Liushengyu258/frozen-exit-adapters/releases/tag/server-data-20261023",
+  "snapshot_fingerprint": "4900c16ae29e4b0ea0675ae707ec172080219afb7ac76c6676e8e32ffcc94ba6",
+  "logical_bytes": 180702908040,
+  "regular_files": 15049,
+  "manifest_asset": {
+    "id": 668396219,
+    "name": "manifest.json.gz",
+    "size": 1127532,
+    "sha256": "4e0d34fb17a3a8943440edec350099bc42233f67618add8c12d4ecd9ba233720",
+    "url": "https://github.com/Liushengyu258/frozen-exit-adapters/releases/download/untagged-c79929c318bc547f0ec9/manifest.json.gz",
+    "verified": true
+  },
+  "asset_count": 430,
+  "all_verified": true
+}

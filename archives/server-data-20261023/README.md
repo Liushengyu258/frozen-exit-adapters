@@ -1,6 +1,6 @@
 # Full server experiment snapshot — server-data-20261023
 
-Status: **IN PROGRESS — data release remains draft until verification completes**.
+Status: **COMPLETE — all assets verified**.
 
 Source: `/root/autodl-tmp/layer-probe` on the experiment server. Snapshot: 15,049 regular files, 180,702,908,040 logical bytes, plus recorded directory and symbolic-link metadata. Excluded credentials/special files: 0.
 
