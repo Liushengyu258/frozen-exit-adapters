@@ -135,7 +135,8 @@ def send_asset(path,name):
     with GUARD:ASSETS[name]=row
     return {'id':row['id'],'name':name,'size':size,'sha256':checksum,'url':row['browser_download_url'],'verified':True}
    if row.get('size',0)==0 and row.get('state')!='uploaded':api('DELETE',f'/repos/{REPO}/releases/assets/{row["id"]}')
-   else:raise RuntimeError('Incomplete or inconsistent release asset: '+name)
+   elif row.get('state')=='uploaded' and row.get('digest') and row.get('size')==size:raise RuntimeError('Release asset checksum mismatch: '+name)
+   else:log('asset_processing_pending',name=name,state=row.get('state'))
   if n==6:raise RuntimeError('Upload retries exhausted: '+name)
   time.sleep(min(60,3*2**n))
  raise RuntimeError('Asset upload failed: '+name)
@@ -221,9 +222,10 @@ def worker(token):
   releases=api('GET',f'/repos/{REPO}/releases?per_page=100');RELEASE=next((x for x in releases if x['tag_name']==TAG),None)
   if not RELEASE:RELEASE=api('POST',f'/repos/{REPO}/releases',{'tag_name':TAG,'target_commitish':'main','name':'Full experiment server data — 2026-10-23','draft':True,'prerelease':False,'body':'Full project snapshot uploaded directly from the experiment server. Publication occurs only after all archive parts and the manifest have been verified.'})
  ASSETS=release_assets()
+ status(uploaded_assets=len(MANIFEST['assets']),uploaded_compressed_bytes=sum(v['size'] for v in MANIFEST['assets'].values()),verified_input_bytes=sum(v.get('raw_size',0) for v in MANIFEST['assets'].values()))
  entries=MANIFEST['entries']
  files=[v for v in entries if v['type']=='file'];small=[v for v in files if v['size']<SMALL];large=[v for v in files if v['size']>=SMALL]
- anticipated=1+sum(math.ceil(v['size']/CHUNK) for v in large)+3
+ anticipated=1+sum(math.ceil(v['size']/CHUNK) for v in large)+2
  if anticipated>1000:raise RuntimeError('Snapshot exceeds release asset count limit')
  status('preparing',release_id=RELEASE['id'],release_url=f'https://github.com/{REPO}/releases/tag/{TAG}',regular_files=len(files),total_input_bytes=sum(v['size'] for v in files),expected_assets=anticipated,excluded_count=len(excluded))
  repository_index(False)
